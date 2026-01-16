@@ -185,7 +185,7 @@ COPY (
 
 - **대상**: 2010년 이전 가입자 중 월 이용 금액 30만 원 미만 고객
 
-<img width="1067" height="531" alt="image" src="https://github.com/user-attachments/assets/4345ab96-42fb-4367-9e86-8e447f6ccbed" />
+<img width="1876" height="455" alt="image" src="https://github.com/user-attachments/assets/ff502c08-2943-44ef-b0e3-d7749dbbd3cf" />
 
 - **발견점**: 장기 가입 소액 이용자들은 체크카드보다 **신용카드**를 사용하는 비중이 약 2.5배 이상 압도적으로 높게 나타남
 - **인사이트**: 소액 이용자임에도 신용카드를 선호한다는 것은 신용카드 고유의 포인트 적립이나 부가 혜택을 선별적으로 이용하는 **'실속형 체리피커'** 성향이 강함을 시사
@@ -195,7 +195,7 @@ COPY (
 
 - **주요 소비 업종**: 유통, 요식업, 보험/병원, 자동차/연료
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/5af3d0db-8c15-42c2-9258-e673c5cb3d6d" />
+<img width="1067" height="531" alt="image" src="https://github.com/user-attachments/assets/4345ab96-42fb-4367-9e86-8e447f6ccbed" />
 
 - **발견점**: 장기 가입 소액 이용자들의 지출 비율 중 **'유통(마트/백화점)'** 및 **'유통영업리'** 업종이 가장 높은 비중을 차지함
 - **인사이트**: 이들은 광범위한 소비보다 생필품 구매나 정기적인 의료 서비스 이용 등 **필수 생활 동선**에만 우리 카드를 집중적으로 사용하고 있음
@@ -217,7 +217,7 @@ COPY (
 - **실패 사유**: 현재 데이터의 지리적 해상도가 **'시/도' 단위**로만 구분되어 있어, 동일 지역 내에서의 구체적인 직주 분리 여부를 판별하기에는 데이터가 모호함
 - **교훈**: 현재 데이터 구조로는 지리적 차이를 유의미하게 분석할 수 없음을 확인하여 해당 가설을 기각함
 
-<img width="300" height="450" alt="image" src="images/image45.png" />
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/5af3d0db-8c15-42c2-9258-e673c5cb3d6d" />
 
 <hr/>
 
