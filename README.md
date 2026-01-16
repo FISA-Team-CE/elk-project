@@ -15,6 +15,7 @@
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
 ![DBeaver](https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white)
+![Logstash](https://img.shields.io/badge/Logstash-005571?style=for-the-badge&logo=logstash&logoColor=white)
 
 #### 1. 데이터 전처리
    - **DuckDB**: 대용량 CSV 데이터를 메모리 효율적으로 처리하기 위한 분석용 DB 엔진
@@ -341,7 +342,7 @@ COPY (
 
 ### 🚨 문제 상황
 
-- **제한 사항**: 프로젝트 환경 설정 상 Elasticsearch 서버의 가용 메모리(Heap Memory)가 **1GB**로 엄격히 제한됨.
+- **제한 사항**: 프로젝트 환경 설정 상 Kibana(키바나) 업로드 용량 파일이 **1GB**로 엄격히 제한됨.
 - **현상**: 1.5GB 규모의 대용량 CSV 파일을 한 번에 인덱싱할 경우, 메모리 부족(OutOfMemory)이나 연결 타임아웃(`ETIMEDOUT`) 에러가 발생하며 서버가 중단되는 현상 발생.
 - **원인**: 서버 용량을 초과하는 대량의 데이터를 한꺼번에 Bulk 처리하려다 발생하는 시스템 과부하.
 
