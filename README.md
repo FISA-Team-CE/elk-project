@@ -141,7 +141,8 @@ COPY (
 #### 2. 교육 카테고리 심층 분석 (Unstacked Bar Chart)
   - 연령대는 타겟 페르소나에 맞춰 40-65(40세-69세)로 필터링
   - 대분류인 '사무/서적/학원' 비용 중 실질적인 '학원비(중분류)'의 비중을 분석
-<img width="1868" height="517" alt="image" src="https://github.com/user-attachments/assets/15f65ded-c226-4701-854d-56a952b4df3d" />
+<img width="1046" height="591" alt="image" src="https://github.com/user-attachments/assets/65d1dd06-7454-467a-bbf0-fa24850a5427" />
+
   
   - 발견점 : '사무통신/서적/학원' 대분류의 약 90%가 학원비임을 규명해 타겟팅의 정당성 확보
 
