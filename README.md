@@ -11,6 +11,29 @@
 |                 류승환<br/>[@Federico-15](https://github.com/Federico-15)                 |                       서가영<br/>[@caminobelllo](https://github.com/caminobelllo)                       |                유동균<br/>[@dbehdrbs0806](https://github.com/dbehdrbs0806)                |   
 
 
+## ⚙️ 기술 스택
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
+![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)
+![DBeaver](https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white)
+
+#### 1. 데이터 전처리
+   - **DuckDB**: 대용량 CSV 데이터를 메모리 효율적으로 처리하기 위한 분석용 DB 엔진
+   		- Usage: 결측치(NULL) 처리(COALESCE), 데이터 타입 변환(TRY_CAST), 고객 세그먼트 분류(CASE WHEN) 등 전처리 로직 수행.
+   - **SQL**: 데이터 추출 및 가공
+
+#### 2. 시각화 및 분석
+   - **Elasticsearch**(@8.19.3): 전처리된 데이터를 인덱싱하여 검색 및 집계 속도 최적화
+   - **Kibana**(@8.19.3): 데이터 시각화 및 대시보드 구축
+
+#### 3. 도구 및 환경
+   - **DBeaver**: SQL 쿼리 작성, 실행 및 데이터베이스 관리를 위한 툴
+   - **CSV**: 원본 데이터(Raw Data) 및 전처리 완료된 데이터(Processed Data) 저장 포맷
+
+#### 4. 협업 도구
+   - **Notion & Slack**
+
+
 <br />
 
 <br/>
