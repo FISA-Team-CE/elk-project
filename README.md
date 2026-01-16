@@ -208,7 +208,7 @@ COPY (
 
 
 ---
-### 📊 대시보드 2. 장기 가입 소액 이용자의 지출 행태 분석
+### 📊 대시보드 2
 
 #### 1. 회원 등급 중 높은 등급인 VVIP와 VIP에 따른 종목별 카드 사용 차트
 <img width="933" height="516" alt="image-1" src="https://github.com/user-attachments/assets/28cd7ffa-9e47-4883-a722-845232c4c092" />
