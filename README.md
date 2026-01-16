@@ -153,7 +153,7 @@ COPY (
 ## Kibana를 이용한 데이터 시각화
 전처리된 데이터를 Elasticsearch에 적재하고, Kibana Dashboard를 통해 지표들을 시각화함
 
-### 📊 대시보드 구성
+### 📊 대시보드 1
 #### 1. 라이프스테이지별 잠정 고객 비율 (Stacked Bar Chart)
   - 전체 고객들을 라이프스테이지에 따라 구분
   - 총 이용 금액 150만원 미만을 **Low (잠정 고객)** 으로 정의하여 해당 비율이 가장 높은 그룹을 타켓 페르소나로 선정
@@ -186,7 +186,7 @@ COPY (
 
 <hr/>
 
-### 💸 마케팅 인사이트 및 전략 도출
+### 💸 마케팅 인사이트 및 전략 도출 1
 > 시각화 데이터를 통해 잠정 고객 유치를 위한 실행 전략을 도출
 
 <img width="838" height="424" alt="스크린샷 2026-01-16 오전 10 08 27" src="https://github.com/user-attachments/assets/746668d7-3c38-401f-943c-9d28ae2f9134" />
@@ -209,6 +209,47 @@ COPY (
 
 ---
 ### 📊 대시보드 2. 장기 가입 소액 이용자의 지출 행태 분석
+
+#### 1. 회원 등급 중 높은 등급인 VVIP와 VIP에 따른 종목별 카드 사용 차트
+<img width="933" height="516" alt="image-1" src="https://github.com/user-attachments/assets/28cd7ffa-9e47-4883-a722-845232c4c092" />
+
+> **유통(유통업 비영리), 보험/병원, 요식업(음식료품), 자동차/연료/정비, 여행(여행업)**
+>
+높은 등급의 회원들은 보통 유통과, 보험/병원, 요식업(식사), 자동차/연료/정비에 많은 카드 소비량을 나타내고 있음
+
+#### 1-1. 회원 등급이 낮은 등급인 골드와 해당없음에 따른 종목별 카드 사용 차트
+<img width="914" height="509" alt="image-2" src="https://github.com/user-attachments/assets/64c862a0-edc0-4e7c-a587-f27eda9b5e55" />
+
+> **유통(유통업 비영리), 보험/병원, 요식업(음식료품), 자동차/연료/정비, 여행(여행업)**
+>
+낮은 등급의 회원들도 위 차트와 같이 유사한 유통, 보험/병원, 요식업 등에 많은 카드 소비를 나타내고 있음
+
+이에 따라 **유통, 보험/의료, 자동차/연료/정비** 등 생활 필수 소비 영역에 있어 카드 이용 시 혜택을 제공한다면 고객 유치에 효과적일 것이라 기대
+
+#### 4-1. 디지털 채널 이용 여부에 따른 카드 총 소비량 비교 차트
+<img width="921" height="508" alt="image (5)" src="https://github.com/user-attachments/assets/fe60937d-8d7d-47c8-89be-c14c5d47e843" />
+
+> 40~60세대에서 디지털 채널가입을 하지 않은 회원이 더 많음
+>
+디지털 채널의 사용에 있어 사용하는 회원들의 소비량이 비교적 더 많은 것을 확인할 수 있음
+
+#### 4-2. 높은 회원등급에 속하는 4060세대 회원의 학원비 소비 차트
+<img width="930" height="507" alt="image (9)" src="https://github.com/user-attachments/assets/811079b2-a99d-4ea6-9005-b0e06bad3b4b" />
+
+> 가설: **4060대연령대가 회원**들은 **디지털 채널 등록 여부** 상관없이 학원비에 **카드 소비량이 많을 것**
+>
+위 가설은 차트를 확인하였때 연령대가 많은 회원들은 디지털 채널을 많이 사용하는 것을 확인할 수 있고 또한 카드 소비 사용량도 디지털 채널을 사용하는 사람이 많은 것으로 확인됨
+
+잠재 고객을 유치하는데 있어 디지털 채널의 이용을 적극 권장하고 채널을 통해 많은 서비스를 회원에게 제공하는 방안이 효과적일 것이라 기대 
+
+#### 5. 회원 등급과 연령대가 높은 회원들의 특정 소비 비교 차트 
+<img width="928" height="509" alt="image-4" src="https://github.com/user-attachments/assets/59ac3ff5-a98c-4154-96c3-8cfe964d71bb" />
+
+회원 등급이 높은 **VVip, vip, 플래티넘**에 속하면서 연령대가 **중년기타, 2nd Life**에 속하는 회원들의 소비량을 비교함  
+이 연령대에 속하는 잠재 고객들을 유치함에 있어 **학원과 음료 식품**에 있어 다양한 이벤트와 방안들을 모색하며 동시에 **회원 등급에 따른 차등 대우**를 하게 된다면 카드의 사용이 늘어날 것이라 기대함
+
+---
+### 📊 대시보드 3. 장기 가입 소액 이용자의 지출 행태 분석
 
 라이프스테이지 분석 외에도, 우리카드를 오랫동안 보유하고 있으나 이용 금액이 저조한 고객층을 타겟팅하여 구체적인 지출 패턴을 분석함
 
@@ -277,44 +318,78 @@ COPY (
     1. **마케팅 효율 극대화**: 실효성이 낮은 이동 관련 혜택 예산을 삭감하고, 실제 소비가 일어나는 유통 및 의료 업종에 집중하여 마케팅 비용 대비 효용을 높임.
 
     2. **데이터 분석의 선순환**: 가설 실패 과정을 통해 파악된 데이터의 한계를 바탕으로, 향후 구 단위 상세 주소 데이터 확보 등 분석 고도화를 위한 명확한 방향성을 수립함.
+ 
+---
 
+## 🛠️ 트러블 슈팅: Elasticsearch 메모리 제한(1GB) 환경 극복
 
+### 🚨 문제 상황
 
+- **제한 사항**: 프로젝트 환경 설정 상 Elasticsearch 서버의 가용 메모리(Heap Memory)가 **1GB**로 엄격히 제한됨.
+- **현상**: 1.5GB 규모의 대용량 CSV 파일을 한 번에 인덱싱할 경우, 메모리 부족(OutOfMemory)이나 연결 타임아웃(`ETIMEDOUT`) 에러가 발생하며 서버가 중단되는 현상 발생.
+- **원인**: 서버 용량을 초과하는 대량의 데이터를 한꺼번에 Bulk 처리하려다 발생하는 시스템 과부하.
 
-## 3. 회원 등급 중 높은 등급인 VVIP와 VIP에 따른 종목별 카드 사용 차트
-<img width="933" height="516" alt="image-1" src="https://github.com/user-attachments/assets/28cd7ffa-9e47-4883-a722-845232c4c092" />
+### ✨ 해결 방안: Logstash를 활용한 데이터 파이프라인 최적화
 
-> **유통(유통업 비영리), 보험/병원, 요식업(음식료품), 자동차/연료/정비, 여행(여행업)**
->
-높은 등급의 회원들은 보통 유통과, 보험/병원, 요식업(식사), 자동차/연료/정비에 많은 카드 소비량을 나타내고 있음
+Elasticsearch 서버에 가해지는 부담을 최소화하기 위해 **Logstash**를 도입하여 데이터를 적절한 단위로 분할 전송하는 방식을 채택함.
 
-## 3-1. 회원 등급이 낮은 등급인 골드와 해당없음에 따른 종목별 카드 사용 차트
-<img width="914" height="509" alt="image-2" src="https://github.com/user-attachments/assets/64c862a0-edc0-4e7c-a587-f27eda9b5e55" />
+### **[핵심 전략]**
 
-> **유통(유통업 비영리), 보험/병원, 요식업(음식료품), 자동차/연료/정비, 여행(여행업)**
->
-낮은 등급의 회원들도 위 차트와 같이 유사한 유통, 보험/병원, 요식업 등에 많은 카드 소비를 나타내고 있음
+- **분할 적재(Batch Processing)**: Logstash의 배치 사이즈를 조절하여, 한 번에 전송되는 데이터 양이 Elasticsearch의 제한된 메모리(1GB) 내에서 충분히 처리될 수 있도록 최적화함.
+- **실시간 모니터링**: `stdout { codec => dots }` 설정을 통해 서버 과부하 여부를 체크하며 안정적으로 데이터를 소화함.
 
-이에 따라 **유통, 보험/의료, 자동차/연료/정비** 등 생활 필수 소비 영역에 있어 카드 이용 시 혜택을 제공한다면 고객 유치에 효과적일 것이라 기대
+### ⚙️ Logstash 설정 파일 (`card_batch.conf`)
 
-## 4-1. 디지털 채널 이용 여부에 따른 카드 총 소비량 비교 차트
-<img width="921" height="508" alt="image (5)" src="https://github.com/user-attachments/assets/fe60937d-8d7d-47c8-89be-c14c5d47e843" />
+> ⚠️ 보안을 위해 비밀번호는 변수 처리하였으며, 컬럼명은 변수로 요약되었습니다.
+```
+input {
+  file {
+    path => "C:/devEnv/ELK/data/*.csv"
+    start_position => "beginning"
+    sincedb_path => "NUL"
+    codec => plain { charset => "UTF-8" }
+  }
+}
 
-> 40~60세대에서 디지털 채널가입을 하지 않은 회원이 더 많음
->
-디지털 채널의 사용에 있어 사용하는 회원들의 소비량이 비교적 더 많은 것을 확인할 수 있음
+filter {
+  csv {
+    separator => ","
+    # [보안 처리] 실제 컬럼명을 변수명으로 매핑하여 노출 방지
+    columns => [
+      "Field_Age", "Field_Gender", "Field_Rank", "Field_Date", "Field_Location", 
+      "Total_Amount", "Credit_Amount", "Check_Amount", "Fuel_Amount", "Medical_Amount", 
+      "Food_Amount", "Shopping_Amount"
+    ]
+    skip_header => "true"
+  }
 
-## 4-2. 높은 회원등급에 속하는 4060세대 회원의 학원비 소비 차트
-<img width="930" height="507" alt="image (9)" src="https://github.com/user-attachments/assets/811079b2-a99d-4ea6-9005-b0e06bad3b4b" />
+  mutate {
+    # 데이터 정제 및 타입 변환
+    strip => ["Field_Location"]
+    convert => {
+      "Field_Age" => "integer"
+      "Total_Amount" => "integer"
+      "Fuel_Amount" => "integer"
+      "Medical_Amount" => "integer"
+      "Food_Amount" => "integer"
+    }
+    # 메모리 효율을 위해 불필요한 메타데이터 삭제
+    remove_field => ["message", "@version", "path", "host", "event"]
+  }
+}
 
-> 가설: **4060대연령대가 회원**들은 **디지털 채널 등록 여부** 상관없이 학원비에 **카드 소비량이 많을 것**
->
-위 가설은 차트를 확인하였때 연령대가 많은 회원들은 디지털 채널을 많이 사용하는 것을 확인할 수 있고 또한 카드 소비 사용량도 디지털 채널을 사용하는 사람이 많은 것으로 확인됨
+output {
+  elasticsearch {
+    hosts => ["${ES_HOST}"]      # 환경변수 활용
+    index => "card-data-stream"
+    user => "${ES_USER}"        # 환경변수 활용
+    password => "${ES_PWD}"      # 환경변수 활용
+    
+    ssl => true
+    ssl_verification_mode => "none"
+  }
+  # 처리 상태 실시간 시각화 (서버 다운 방지 모니터링)
+  stdout { codec => dots }
+}
+```
 
-잠재 고객을 유치하는데 있어 디지털 채널의 이용을 적극 권장하고 채널을 통해 많은 서비스를 회원에게 제공하는 방안이 효과적일 것이라 기대 
-
-## 5. 회원 등급과 연령대가 높은 회원들의 특정 소비 비교 차트 
-<img width="928" height="509" alt="image-4" src="https://github.com/user-attachments/assets/59ac3ff5-a98c-4154-96c3-8cfe964d71bb" />
-
-회원 등급이 높은 **VVip, vip, 플래티넘**에 속하면서 연령대가 **중년기타, 2nd Life**에 속하는 회원들의 소비량을 비교함  
-이 연령대에 속하는 잠재 고객들을 유치함에 있어 **학원과 음료 식품**에 있어 다양한 이벤트와 방안들을 모색하며 동시에 **회원 등급에 따른 차등 대우**를 하게 된다면 카드의 사용이 늘어날 것이라 기대함
